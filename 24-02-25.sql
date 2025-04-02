@@ -53,7 +53,7 @@ db.Results.drop()
 true
 show collections
 Students
-db.Students.insertOne({name:'Mansha S', location:'Gujarat'})
+db.Students.insertOne({name:'Mansha kshatriya', location:'Gujarat'})
 {
   acknowledged: true,
   insertedId: ObjectId('67d9b903726d52f6470e5b75')
