@@ -3,8 +3,8 @@ monday
 db.Students.find().pretty()
 {
   _id: ObjectId('67d9b946726d52f6470e5b76'),
-  name: 'Shubham Raj Sharma',
-  location: 'Bihar'
+  name: 'Mansha Kshatriya',
+  location: 'Gujarat'
 }
 -- db.Students.updateOne({name:'Shubham Raj Sharma'}, {$set:{'name':'Shubh'})
 -- SyntaxError: Unexpected token, expected "," (1:73)
@@ -31,7 +31,7 @@ db.Students.find().pretty()
 
 -- [0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39m[33mStudents[39m[33m.[39mupdateOne({name[33m:[39m[32m'Shubham Raj Sharma'[39m}[33m,[39m{$set[33m:[39m{[32m'name'[39m[33m:[39m[32m'Shubh'[39m})
 --  [90m   |[39m                                                                         [31m[1m^[22m[39m[0m
-db.Students.updateOne({name:'Shubham Raj Sharma'},{$set:{'name':'Shubh'}})
+db.Students.updateOne({name:'Mansha Kshatriya'},{$set:{'name':'Mansha'}})
 {
   acknowledged: true,
   insertedId: null,
@@ -42,8 +42,8 @@ db.Students.updateOne({name:'Shubham Raj Sharma'},{$set:{'name':'Shubh'}})
 db.Students.find()
 {
   _id: ObjectId('67d9b946726d52f6470e5b76'),
-  name: 'Shubh',
-  location: 'Bihar'
+  name: 'Mansha',
+  location: 'Gujarat'
 }
 db.Students.insertOne({})
 {
@@ -52,7 +52,7 @@ db.Students.insertOne({})
 }
 db.Students.insertOne({
 -id :1,
-name: "Joy"});
+name: "Sanjana"});
 -- SyntaxError: Unexpected token (2:0)
 
 -- [0m [90m 1 |[39m db[33m.[39m[33mStudents[39m[33m.[39minsertOne({
@@ -61,7 +61,7 @@ name: "Joy"});
 --  [90m 3 |[39m name[33m:[39m [32m"Joy"[39m})[33m;[39m[0m
 db.Students.insertOne({
 _id :1,
-name: "Joy"});
+name: "Sanajna"});
 {
   acknowledged: true,
   insertedId: 1
@@ -69,26 +69,26 @@ name: "Joy"});
 db.Students.find()
 {
   _id: ObjectId('67d9b946726d52f6470e5b76'),
-  name: 'Shubh',
-  location: 'Bihar'
+  name: 'Mansha',
+  location: 'Gujarat'
 }
 {
   _id: ObjectId('67d9c0124528fa06b04ca584')
 }
 {
   _id: 1,
-  name: 'Joy'
+  name: 'Sanjana'
 }
 db.Students.insertOne({
 _id :null,
-name: "Ujjwal"});
+name: "Nupoor"});
 {
   acknowledged: true,
   insertedId: ObjectId('67d9c0bd4528fa06b04ca585')
 }
 db.Students.insertOne({
 _id :null,
-name: "Shubham"});
+name: "Mansha"});
 {
   acknowledged: true,
   insertedId: ObjectId('67d9c0c34528fa06b04ca586')
@@ -96,8 +96,8 @@ name: "Shubham"});
 db.Students.find()
 {
   _id: ObjectId('67d9b946726d52f6470e5b76'),
-  name: 'Shubh',
-  location: 'Bihar'
+  name: 'Mansha',
+  location: 'Gujarat'
 }
 {
   _id: ObjectId('67d9c0124528fa06b04ca584')
@@ -108,11 +108,11 @@ db.Students.find()
 }
 {
   _id: ObjectId('67d9c0bd4528fa06b04ca585'),
-  name: 'Ujjwal'
+  name: 'Nupoor'
 }
 {
   _id: ObjectId('67d9c0c34528fa06b04ca586'),
-  name: 'Shubham'
+  name: 'Sanjana'
 }
 db.Students.insertOne([
   {title:"NoSQL Distilled",isbn:"0-4696-7030-4"},
