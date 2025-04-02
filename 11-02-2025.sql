@@ -6,7 +6,7 @@ create table student(
   s_department varchar(25) not null
   );
 
-insert into student values (1001, "Shubham","CSE"),(1002,"Joy","CSE"),(1003,"Ujjwal","CSE");
+insert into student values (1001, "Mansha","CSE"),(1002,"Sanjana","CSE"),(1003,"Ujjwala","CSE");
 
 select * from student;
 
