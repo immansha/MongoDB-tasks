@@ -53,12 +53,12 @@ db.Results.drop()
 true
 show collections
 Students
-db.Students.insertOne({name:'Shubham V', location:'Samastipur'})
+db.Students.insertOne({name:'Mansha S', location:'Gujarat'})
 {
   acknowledged: true,
   insertedId: ObjectId('67d9b903726d52f6470e5b75')
 }
-db.Students.insertOne({name:'Shubham Raj Sharma', location:'Bihar'})
+db.Students.insertOne({name:'Mansha kshatriya', location:'Surat'})
 {
   acknowledged: true,
   insertedId: ObjectId('67d9b946726d52f6470e5b76')
@@ -66,15 +66,15 @@ db.Students.insertOne({name:'Shubham Raj Sharma', location:'Bihar'})
 db.Students.find()
 {
   _id: ObjectId('67d9b903726d52f6470e5b75'),
-  name: 'Shubham V',
-  location: 'Samastipur'
+  name: 'Mansha S',
+  location: 'Gujarat'
 }
 {
   _id: ObjectId('67d9b946726d52f6470e5b76'),
-  name: 'Shubham Raj Sharma',
-  location: 'Bihar'
+  name: 'Mansha kshatriya',
+  location: 'Surat'
 }
-db.Students.deleteOne({name:'Shubham V'})
+db.Students.deleteOne({name:'Mansha kshatriya'})
 {acknowledged: true,
   insertedId: ObjectId('67d9b903726d52f6470e5b75')
 }
